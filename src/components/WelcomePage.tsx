@@ -19,16 +19,6 @@ const WelcomePage: React.FC = () => {
           Software<br />
           Engineer
         </h2>
-        <nav className="navigation-bar">
-          <ul>
-            <li><a href="#overview">overview</a></li>
-            <li><a href="#education">education</a></li>
-            <li><a href="#work_experience">work_experience</a></li>
-            <li><a href="#hobbies">hobbies</a></li>
-            <li><a href="#skills">skills</a></li>
-            <li><a href="#chat_with_me">chat_with_me</a></li>
-          </ul>
-        </nav>
       </div>
       <div className="welcome-page-right-side">
         <WeirdForms className="weird-forms" />

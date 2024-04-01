@@ -1,0 +1,19 @@
+.navigation-bar {
+  font-family: 'DMMono';
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 4vh;
+}
+
+.navigation-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-bar a {
+  color: black;
+  text-decoration: none;
+}
