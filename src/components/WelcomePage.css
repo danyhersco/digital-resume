@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'DMMono';
+  src: url('../fonts/DMMono-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+
+.welcome-page {
+  display: flex;
+  height: 100vh;
+}
+
+.welcome-page-left-side {
+  padding: 4vh;
+  display: flex;
+  flex-direction: column;
+  flex: 57%;
+}
+
+.welcome-page-right-side {
+  flex: 43%;
+  background: #18395F;
+}
+
+.weird-forms {
+  width: 100%;
+  height: 100%;
+}
+
+.resume-header {
+  font-family: 'DMMono'
+}
+
+.navigation-bar {
+  font-family: 'DMMono'
+}
+
+.navigation-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-bar a {
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Helvetica Neue';
+  font-size: 85px;
+  margin: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0em;
+  line-height: 85px;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-family: 'Helvetica Neue';
+  font-weight: 300;
+  font-size: 85px;
+  margin: 0;
+  margin-bottom: 1.5em;
+  line-height: 85px;
+  letter-spacing: -1px;
+}
