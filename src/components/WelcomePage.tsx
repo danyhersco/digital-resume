@@ -11,13 +11,11 @@ const WelcomePage: React.FC = () => {
           digital_resume<br />
           last_updated: 31/03/2024
         </p>
-        <h1>
-          Dany<br />
-          Herscovitch
+        <h1 className="welcome-page-h1">
+          Dany<br />Herscovitch
         </h1>
-        <h2>
-          Software<br />
-          Engineer
+        <h2 className="welcome-page-h2">
+          Software<br />Engineer
         </h2>
       </div>
       <div className="welcome-page-right-side">
