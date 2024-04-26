@@ -10,6 +10,7 @@ interface EducationItemProps {
   institutionName: string;
   educationLevel: string;
   programmeName: string;
+  bulletPoints: string[];
   isExpanded: boolean;
   onToggleExpansion: () => void;
 }
@@ -18,6 +19,7 @@ const EducationItem: React.FC<EducationItemProps> = ({
   institutionName,
   educationLevel,
   programmeName,
+  bulletPoints,
   isExpanded,
   onToggleExpansion
 }) => {
@@ -47,7 +49,11 @@ const EducationItem: React.FC<EducationItemProps> = ({
         </p>
         {isExpanded && (
           <div className="additional-info">
-            {"This is what I did at Imperial"}
+            <ul>
+              {bulletPoints.map((point, index) => (
+                <li key={index}>{point}</li>
+              ))}
+            </ul>
           </div>
         )}
       </div>
