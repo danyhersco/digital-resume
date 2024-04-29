@@ -7,9 +7,9 @@ const Education: React.FC = () => {
 
   const toggleExpansion = (institutionName: string) => {
     if (expandedItem === institutionName) {
-      setExpandedItem(null); // Collapse the currently expanded item
+      setExpandedItem(null);
     } else {
-      setExpandedItem(institutionName); // Expand the new item
+      setExpandedItem(institutionName);
     }
   };
 

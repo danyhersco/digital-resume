@@ -20,41 +20,82 @@
   font-size: 85px;
   letter-spacing: -1px;
   margin: 0px;
-  margin-bottom: 30px;
-  background-color: crimson;
+  margin-bottom: 50px;
 }
 
 .work-experience-items {
   height: 100%;
   display: flex;
-  background-color: blue;
 }
 
 .work-experience-logos {
   width: 40%;
-  padding-left: 2%;
-  background-color: rgb(23, 170, 255);
 }
 
-.work-experience-description {
+.work-experience-data {
   width: 60%;
-  background-color: chartreuse;
 }
 
 .company-logo {
-  height: 17vh;
-  width: 17vh;
+  height: 15vh;
+  width: 15vh;
   padding: 1vh;
   border-radius: 50%;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
 }
 
-.fly-logo .st0 { fill: #D486FE; }
-.fly-logo .st1 { fill: #1D1D1B; }
-.fly-logo .st2 { fill: #FFF369; }
-.fly-logo .st3 { fill: #A3984B; }
-.fly-logo .st4 { fill: #1D1D1B; }
+.company-logo:hover {
+  filter: none;
+}
 
-.initiator-logo .st0 { fill: #F5F5F5; }
+.company-logo.selected {
+  filter: none;
+}
+
+.work-experience-job-title {
+  font-family: 'Helvetica Neue';
+  font-size: 35px;
+  letter-spacing: -1px;
+  margin: 0px;
+}
+
+.work-experience-company {
+  font-family: 'Helvetica Neue';
+  font-size: 35px;
+  letter-spacing: -1px;
+  margin: 0px;
+  font-weight: 300;
+}
+
+.work-experience-span {
+  font-family: 'Helvetica Neue';
+  font-size: 35px;
+  letter-spacing: -1px;
+  margin: 0px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* .fly-logo .st10 { fill: #000000; }
+.fly-logo .st11 { fill: #000000; }
+.fly-logo .st12 { fill: #FFFFFF; }
+.fly-logo .st13 { fill: #FFFFFF; }
+.fly-logo .st14 { fill: #000000; }
+
+.fly-logo:hover .st10 { fill: #D486FE; }
+.fly-logo:hover .st11 { fill: #000000; }
+.fly-logo:hover .st12 { fill: #FFF369; }
+.fly-logo:hover .st13 { fill: #A3984B; }
+.fly-logo:hover .st14 { fill: #000000; }
+
+.initiator-logo .st7 { fill: #000000; }
+.initiator-logo .st8 { fill: #FFFFFF; }
+.initiator-logo .st9 { fill: #FFFFFF; }
+
+.initiator-logo:hover .st7 { fill: #010431; }
+.initiator-logo:hover .st8 { fill: url(#SVGID_2_); }
+.initiator-logo:hover .st9 { fill: url(#SVGID_00000110464565709603092210000005136457294863076799_); }
 
 .koble-logo .st0 { fill: #4AFFA8; }
 
@@ -65,4 +106,4 @@
 .rouvenat-logo .st1 { fill: #FFFFFF; }
 
 .xapien-logo .st0 { fill: #1DCCBF; }
-.xapien-logo .st1 { fill: #FFFFFF; }
+.xapien-logo .st1 { fill: #FFFFFF; } */
