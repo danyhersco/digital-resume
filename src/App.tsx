@@ -4,6 +4,7 @@ import WelcomePage from './components/WelcomePage';
 import NavigationBar from './components/NavigationBar';
 import Overview from './components/overview/Overview';
 import Education from './components/education/Education';
+import WorkExperience from './components/work-experience/WorkExperience';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <WelcomePage/>
       <Overview/>
       <Education/>
+      <WorkExperience/>
     </div>
   );
 }
