@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./EducationItem.css";
 import { ReactComponent as ImperialLogo } from "../../images/imperial_logo.svg";
 import { ReactComponent as LseLogo } from "../../images/lse_logo.svg";

@@ -32,6 +32,7 @@
 
 .work-experience-logos {
   width: 40%;
+  padding-left: 2%;
   background-color: rgb(23, 170, 255);
 }
 
@@ -39,3 +40,29 @@
   width: 60%;
   background-color: chartreuse;
 }
+
+.company-logo {
+  height: 17vh;
+  width: 17vh;
+  padding: 1vh;
+  border-radius: 50%;
+}
+
+.fly-logo .st0 { fill: #D486FE; }
+.fly-logo .st1 { fill: #1D1D1B; }
+.fly-logo .st2 { fill: #FFF369; }
+.fly-logo .st3 { fill: #A3984B; }
+.fly-logo .st4 { fill: #1D1D1B; }
+
+.initiator-logo .st0 { fill: #F5F5F5; }
+
+.koble-logo .st0 { fill: #4AFFA8; }
+
+.makor-logo .st0 { fill: #440595; }
+.makor-logo .st1 { fill: #FFFFFF; }
+
+.rouvenat-logo .st0 { fill: #C6633D; }
+.rouvenat-logo .st1 { fill: #FFFFFF; }
+
+.xapien-logo .st0 { fill: #1DCCBF; }
+.xapien-logo .st1 { fill: #FFFFFF; }
