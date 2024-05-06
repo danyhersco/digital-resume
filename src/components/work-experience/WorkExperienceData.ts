@@ -30,7 +30,15 @@ const workExperienceDataMapping: Record<string, WorkExperienceData> = {
     startDate: "12/2020",
     endDate: "04/2023",
     description:
-      "Initiator VC"
+      "Initiator VC is a student startup incubator I started with classmates. We run venture " +
+      "creation programs for students from top universities, helping them find co-founders, gain " +
+      "mentorship from industry experts like investors and successful entrepreneurs, and " +
+      "potentially receive initial funding from the $1.5 million we raised.\n\nOver three years, " +
+      "my role focused on marketing and communications to increase program applications. I led a " +
+      "marketing team of six students for a year, and our effective strategies led to over 1,000 " +
+      "applications for three programs. Additionally, I supported some of our startups " +
+      "throughout the program, ensuring they always had the necessary resources. Finally, being " +
+      "a freelance graphic designer, I also designed the website and all social media content."
   },
   Koble: {
     title: "Data Science Intern",
@@ -38,7 +46,14 @@ const workExperienceDataMapping: Record<string, WorkExperienceData> = {
     startDate: "02/2023",
     endDate: "04/2023",
     description:
-      "Koble"
+      "Koble is a London-based startup developing an AI algorithm to predict startup success. " +
+      "This quantitative approach to venture capital helps VC firms and angel investors make " +
+      "smarter investment decisions.\n\nDuring my two-month data science internship, I developed " +
+      "an algorithm to optimize our VC portfolio size based on over 10 features, including " +
+      "ticket sizing and follow-on funding allocations. I also improved our main database by " +
+      "adding new data points from sources like Pitchbook and Crunchbase, developed strategies " +
+      "for missing data imputation, and built a neural network pipeline in Python to predict " +
+      "startup success using our pre-processed database."
   },
   Makor: {
     title: "Investment Brokerage Intern",
@@ -46,7 +61,14 @@ const workExperienceDataMapping: Record<string, WorkExperienceData> = {
     startDate: "11/2020",
     endDate: "11/2020",
     description:
-      "Makor",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula odio nisl, " +
+      "sit amet consequat eros aliquet in. Donec vel congue dolor. Nulla vitae libero ut sem " +
+      "aliquam eleifend et vitae est. Sed cursus ac est quis facilisis. Curabitur fringilla nibh " +
+      "et metus bibendum feugiat.\n\nAliquam imperdiet egestas efficitur. Aliquam massa felis, " +
+      "interdum et augue vel, maximus lacinia magna. Integer sit amet massa viverra, efficitur " +
+      "velit sed, pretium libero. Phasellus sit amet est metus. Integer auctor nibh commodo " +
+      "laoreet lacinia. Vivamus sed felis tempus, vulputate est at, scelerisque nunc. Donec nec " +
+      "tellus vel nulla varius scelerisque quis eu leo.",
   },
   Rouvenat: {
     title: "Brand Strategy Intern",
@@ -54,7 +76,14 @@ const workExperienceDataMapping: Record<string, WorkExperienceData> = {
     startDate: "07/2021",
     endDate: "09/2021",
     description:
-      "Rouvenat",
+      "Rouvenat is a historic French jewellery house from the Second Empire, now part of " +
+      "Luximpact Holdings, which focuses on eco-friendly jewellery. Rouvenat uses only recycled " +
+      "gold and vintage precious stones, ensuring that nothing new is mined. Essentially, " +
+      "Rouvenat brings forgotten treasures back to life.\n\nDuring my two-month internship, " +
+      "before the brand relaunched, I helped CEO Marie with tasks related to brand identity, " +
+      "digital marketing, and competition analysis. For instance, I visited places like the " +
+      "Louvre Museum to draw inspiration from Second Empire artifacts for our upcoming products. " +
+      "Additionally, I created product line sheets for Massin, another brand under Luximpact.",
   },
   Xapien: {
     title: "Junior Applied Research Engineer",
