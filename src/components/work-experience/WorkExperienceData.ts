@@ -6,6 +6,7 @@ interface WorkExperienceData {
   startDate: string;
   endDate: string;
   description: string;
+  link: string;
 }
 
 const workExperienceDataMapping: Record<string, WorkExperienceData> = {
@@ -23,6 +24,7 @@ const workExperienceDataMapping: Record<string, WorkExperienceData> = {
       "tough job due to stiff competition and our brand being new. I also handled all the " +
       "creative aspects, designing our logo, social media content, website, and apparel. In the " +
       "span of one year, we sold over 1000 products over 15 countries.",
+    link: "https://www.facebook.com/flystorebe/",
   },
   Initiator: {
     title: "Product Manager & Start-up Guide",
@@ -38,7 +40,8 @@ const workExperienceDataMapping: Record<string, WorkExperienceData> = {
       "marketing team of six students for a year, and our effective strategies led to over 1,000 " +
       "applications for three programs. Additionally, I supported some of our startups " +
       "throughout the program, ensuring they always had the necessary resources. Finally, being " +
-      "a freelance graphic designer, I also designed the website and all social media content."
+      "a freelance graphic designer, I also designed the website and all social media content.",
+    link: "https://initiator.vc/",
   },
   Koble: {
     title: "Data Science Intern",
@@ -53,7 +56,8 @@ const workExperienceDataMapping: Record<string, WorkExperienceData> = {
       "ticket sizing and follow-on funding allocations. I also improved our main database by " +
       "adding new data points from sources like Pitchbook and Crunchbase, developed strategies " +
       "for missing data imputation, and built a neural network pipeline in Python to predict " +
-      "startup success using our pre-processed database."
+      "startup success using our pre-processed database.",
+    link: "https://www.koble.ai/",
   },
   Makor: {
     title: "Investment Brokerage Intern",
@@ -69,6 +73,7 @@ const workExperienceDataMapping: Record<string, WorkExperienceData> = {
       "velit sed, pretium libero. Phasellus sit amet est metus. Integer auctor nibh commodo " +
       "laoreet lacinia. Vivamus sed felis tempus, vulputate est at, scelerisque nunc. Donec nec " +
       "tellus vel nulla varius scelerisque quis eu leo.",
+    link: "https://makor-group.com/",
   },
   Rouvenat: {
     title: "Brand Strategy Intern",
@@ -84,6 +89,7 @@ const workExperienceDataMapping: Record<string, WorkExperienceData> = {
       "digital marketing, and competition analysis. For instance, I visited places like the " +
       "Louvre Museum to draw inspiration from Second Empire artifacts for our upcoming products. " +
       "Additionally, I created product line sheets for Massin, another brand under Luximpact.",
+    link: "https://en.rouvenat.com/",
   },
   Xapien: {
     title: "Junior Applied Research Engineer",
@@ -98,6 +104,7 @@ const workExperienceDataMapping: Record<string, WorkExperienceData> = {
       "The latter, powered by a Large Language Model (LLM) with Retrieval Augmented Generation, " +
       "is the Generative AI engine of the product. The main feature lets users ask questions " +
       "about their search subjects and receive answers in natural language.",
+    link: "https://xapien.com/",
   },
 };
 

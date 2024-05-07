@@ -63,7 +63,12 @@ const WorkExperience: React.FC = () => {
               <h2 className="work-experience-span">
                 {workExperienceData.startDate} - {workExperienceData.endDate}
               </h2>
-              <p className="work-experience-description">{formatDescription(workExperienceData.description)}</p>
+              <p className="work-experience-description">
+                {formatDescription(workExperienceData.description)}
+              </p>
+              <a href={workExperienceData.link} target="_blank" rel="noopener noreferrer">
+                <button className="work-experience-button">visit_{selectedExperience.toLowerCase()}</button>
+              </a>
           </div>
         </div>
       </div>

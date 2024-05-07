@@ -41,16 +41,7 @@
   width: 15vh;
   padding: 1vh;
   border-radius: 50%;
-  filter: grayscale(100%);
-  transition: filter 0.3s;
-}
-
-.company-logo:hover {
-  filter: none;
-}
-
-.company-logo.selected {
-  filter: none;
+  transition: color 0.2s;
 }
 
 .work-experience-job-title {
@@ -77,33 +68,30 @@
   font-style: italic;
 }
 
-/* .fly-logo .st10 { fill: #000000; }
-.fly-logo .st11 { fill: #000000; }
-.fly-logo .st12 { fill: #FFFFFF; }
-.fly-logo .st13 { fill: #FFFFFF; }
-.fly-logo .st14 { fill: #000000; }
+.work-experience-description {
+  transition: color 0.2s;
+}
 
-.fly-logo:hover .st10 { fill: #D486FE; }
-.fly-logo:hover .st11 { fill: #000000; }
-.fly-logo:hover .st12 { fill: #FFF369; }
-.fly-logo:hover .st13 { fill: #A3984B; }
-.fly-logo:hover .st14 { fill: #000000; }
+.work-experience-button {
+  width: 25%;
+}
 
-.initiator-logo .st7 { fill: #000000; }
-.initiator-logo .st8 { fill: #FFFFFF; }
-.initiator-logo .st9 { fill: #FFFFFF; }
+.initiator-logo:hover .st1 { fill: #39CCFF; transition: fill 0.2s; }
+.initiator-logo.selected .st1 { fill: #39CCFF; transition: fill 0.2s; }
 
-.initiator-logo:hover .st7 { fill: #010431; }
-.initiator-logo:hover .st8 { fill: url(#SVGID_2_); }
-.initiator-logo:hover .st9 { fill: url(#SVGID_00000110464565709603092210000005136457294863076799_); }
+.fly-logo:hover .st3 { fill: #D486FE; transition: fill 0.2s; }
+.fly-logo.selected .st3 { fill: #D486FE; transition: fill 0.2s; }
 
-.koble-logo .st0 { fill: #4AFFA8; }
+.koble-logo:hover .st4 { fill: #4AFFA8; transition: fill 0.2s; }
+.koble-logo:hover .st5 { fill: #000000; transition: fill 0.2s; }
+.koble-logo.selected .st4 { fill: #4AFFA8; transition: fill 0.2s; }
+.koble-logo.selected .st5 { fill: #000000; transition: fill 0.2s; }
 
-.makor-logo .st0 { fill: #440595; }
-.makor-logo .st1 { fill: #FFFFFF; }
+.makor-logo:hover .st8 { fill: #440595; transition: fill 0.2s; }
+.makor-logo.selected .st8 { fill: #440595; transition: fill 0.2s; }
 
-.rouvenat-logo .st0 { fill: #C6633D; }
-.rouvenat-logo .st1 { fill: #FFFFFF; }
+.rouvenat-logo:hover .st6 { fill: #C6633D; transition: fill 0.2s; }
+.rouvenat-logo.selected .st6 { fill: #C6633D; transition: fill 0.2s; }
 
-.xapien-logo .st0 { fill: #1DCCBF; }
-.xapien-logo .st1 { fill: #FFFFFF; } */
+.xapien-logo:hover .st7 { fill: #1DCCBF; transition: fill 0.2s; }
+.xapien-logo.selected .st7 { fill: #1DCCBF; transition: fill 0.2s; }
