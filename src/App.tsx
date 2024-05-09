@@ -5,6 +5,7 @@ import NavigationBar from './components/NavigationBar';
 import Overview from './components/overview/Overview';
 import Education from './components/education/Education';
 import WorkExperience from './components/work-experience/WorkExperience';
+import Activities from './components/activities/Activities';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Overview/>
       <Education/>
       <WorkExperience/>
+      <Activities/>
     </div>
   );
 }

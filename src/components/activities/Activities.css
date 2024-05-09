@@ -1,0 +1,66 @@
+.activities-section {
+  height: 100vh;
+  width: 100%;
+}
+
+.activities-zone {
+  height: 75vh;
+  width: 70%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+
+  display: grid;
+  grid-template-rows: 1fr 3.5fr;
+  grid-template-columns: 1fr 10fr 1fr;
+}
+
+.activities-h1 {
+  font-family: 'Helvetica Neue';
+  margin: 0px;
+  font-size: 85px;
+  letter-spacing: -1px;
+  margin-left: 10%;
+  grid-row: 1;
+  grid-column: 1 / 4;
+}
+
+.left-arrow-zone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.activities-item {
+  background-color: #F5F5F5;
+  border-radius: 60px;
+  padding: 40px;
+}
+
+.right-arrow-zone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  height: 40px;
+  width: 40px;
+}
+
+.activity-title {
+  font-family: 'Helvetica Neue';
+  font-size: 35px;
+  letter-spacing: -1px;
+  margin: 0px;
+}
+
+.activity-span {
+  font-family: 'Helvetica Neue';
+  font-size: 35px;
+  letter-spacing: -1px;
+  margin: 0px;
+  font-weight: 300;
+  font-style: italic;
+}
