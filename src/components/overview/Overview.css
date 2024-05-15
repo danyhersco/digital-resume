@@ -39,19 +39,3 @@
 .overview-p {
   font-family: 'Inter';
 }
-
-/* .overview-button {
-  height: 45px;
-  width: 18%;
-  margin-top: 15px;
-  font-family: 'DMMono';
-  border: none;
-  background-color: #F5F5F5;
-  text-align: center;
-  transition: background-color 0.2s ease;
-}
-
-.overview-button:hover {
-  color: white;
-  background-color: black;
-} */
