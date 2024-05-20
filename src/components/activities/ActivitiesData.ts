@@ -8,8 +8,8 @@ interface ActivitiesData {
   gallery: string[];
 }
 
-const activitiesDataMapping: Record<string, ActivitiesData> = {
-  Piano: {
+const activitiesData: ActivitiesData[] = [
+  {
     activity: "Piano",
     startDate: "09/2007",
     endDate: "Present",
@@ -20,7 +20,35 @@ const activitiesDataMapping: Record<string, ActivitiesData> = {
     "Today, I still play regularly and have branched out into other genres. Currently, I'm " +
     "learning to improvise in jazz.",
     gallery: ["link 1", "link 2", "link 3"],
-  }
-}
+  },
+  {
+    activity: "Graphic Design",
+    startDate: "01/2014",
+    endDate: "Present",
+    description: "Lorem Ipsum",
+    gallery: ["link 1", "link 2", "link 3"],
+  },
+  {
+    activity: "Guitar",
+    startDate: "09/2016",
+    endDate: "Present",
+    description: "Lorem Ipsum",
+    gallery: ["link 1", "link 2", "link 3"],
+  },
+  {
+    activity: "Music Production",
+    startDate: "09/2022",
+    endDate: "Present",
+    description: "Lorem Ipsum",
+    gallery: ["link 1", "link 2", "link 3"],
+  },
+  {
+    activity: "Radio Host",
+    startDate: "09/2017",
+    endDate: "05/2018",
+    description: "Lorem Ipsum",
+    gallery: ["link 1", "link 2", "link 3"],
+  },
+]
 
-export default activitiesDataMapping;
+export default activitiesData;

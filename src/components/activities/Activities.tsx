@@ -1,11 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ArrowLeft from "../../images/arrow_left.svg";
 import ArrowRight from "../../images/arrow_right.svg";
 import "./Activities.css";
-import activitiesDataMapping from './ActivitiesData';
+import activitiesData from './ActivitiesData';
 
 const Activities: React.FC = () => {
-  const activitiesData = activitiesDataMapping["Piano"]
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const nextSlide = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex === activitiesData.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+  const prevSlide = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex === 0 ? activitiesData.length - 1 : prevIndex - 1
+    );
+  };
 
   const formatDescription = (description: string) => {
     return description.split('\n').map((line, index) => (
@@ -16,6 +27,7 @@ const Activities: React.FC = () => {
     ));
   };
 
+  const activeActivityData = activitiesData[activeIndex];
 
   return (
     <div className="activities-section">
@@ -23,25 +35,33 @@ const Activities: React.FC = () => {
         <h1 className="activities-h1">Activities</h1>
         <div className="activities-carousel">
 
-          <div className="arrow-zone">
+          <div onClick={prevSlide} className="arrow-zone">
             <img src={ArrowLeft} alt="Left Arrow"/>
           </div>
 
           <div className="activities-item">
-            <h2 className="activity-title">{activitiesData.activity}</h2>
+            <h2 className="activity-title">{activeActivityData.activity}</h2>
             <h2 className="activity-span">
-              {activitiesData.startDate} - {activitiesData.endDate}
+              {activeActivityData.startDate} - {activeActivityData.endDate}
             </h2>
             <p className="activity-description">
-              {formatDescription(activitiesData.description)}
+              {formatDescription(activeActivityData.description)}
             </p>
             <div className="activity-gallery">
+              <div className="gallery-element"></div>
+              <div className="gallery-element"></div>
+              <div className="gallery-element"></div>
+              <div className="gallery-element"></div>
+              <div className="gallery-element"></div>
+              <div className="gallery-element"></div>
+              <div className="gallery-element"></div>
+              <div className="gallery-element"></div>
               <div className="gallery-element"></div>
               <div className="gallery-element"></div>
             </div>
           </div>
 
-          <div className="arrow-zone">
+          <div onClick={nextSlide} className="arrow-zone">
             <img src={ArrowRight} alt="Right Arrow"/>
           </div>
 
