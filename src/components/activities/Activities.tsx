@@ -57,7 +57,6 @@ const Activities: React.FC = () => {
               <div className="gallery-element"></div>
               <div className="gallery-element"></div>
               <div className="gallery-element"></div>
-              <div className="gallery-element"></div>
             </div>
           </div>
 
