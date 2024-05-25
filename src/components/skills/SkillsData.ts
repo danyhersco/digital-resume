@@ -8,7 +8,7 @@ const skillsData: Record<string, string[]> = {
   "Technology": [
     "Python",
     "JavaScript",
-    "Typsecript",
+    "TypeScript",
     "Golang",
     "SQL",
     "C#",

@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './WelcomePage.css';
-import { ReactComponent as WeirdForms} from '../images/short_forms.svg';
+import { ReactComponent as Rope } from '../images/rope.svg';
 
 
 const WelcomePage: React.FC = () => {
   return (
     <div className="welcome-page">
-      <div className="welcome-page-left-side">
+      <div className="welcome-page-left">
         <p className="resume-header">
           digital_resume<br />
           last_updated: 31/03/2024
@@ -18,8 +18,8 @@ const WelcomePage: React.FC = () => {
           Software<br />Engineer
         </h2>
       </div>
-      <div className="welcome-page-right-side">
-        <WeirdForms className="weird-forms" />
+      <div className="welcome-page-right">
+        <Rope className="rope"/>
       </div>
     </div>
   )

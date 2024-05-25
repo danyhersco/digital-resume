@@ -9,16 +9,22 @@
   height: 100vh;
 }
 
-.welcome-page-left-side {
+.welcome-page-left {
   padding: 4vh;
   display: flex;
   flex-direction: column;
-  flex: 57%;
+  flex: 40%;
 }
 
-.welcome-page-right-side {
-  flex: 43%;
-  background: #18395F;
+.welcome-page-right {
+  display: flex;
+}
+
+.rope {
+  height: 100%;
+  width: 100%;
+  right: 0%;
+  bottom: 0%;
 }
 
 .weird-forms {

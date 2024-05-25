@@ -14,7 +14,13 @@ const Skills: React.FC = () => {
               Technology
             </h2>
             <h2 className="skill-group-body">
-              Python, JavaScript, Typsecript, Golang, SQL, C#, Sklearn, Tensorflow, Git, Langchain, React, NLP
+              Python, JavaScript, TypeScript, Golang, SQL, C#, Sklearn, Tensorflow, Git, Langchain, React, NLP, Machine Learning, MLOps
+            </h2>
+            <h2 className="skill-group-title">
+              Management
+            </h2>
+            <h2 className="skill-group-body">
+              Branding, Collaboration, Communication, Economics, Marketing, Startup Development
             </h2>
             <h2 className="skill-group-title">
               Languages
@@ -40,7 +46,7 @@ const Skills: React.FC = () => {
               Soft Skills
             </h2>
             <h2 className="skill-group-body">
-              Fast Learner, Ambitious, Sociable, Procative, Perfectionism
+              Friendly, Fast Learner, Ambitious, Sociable, Procative, Perfectionism
             </h2>
           </div>
         </div>
