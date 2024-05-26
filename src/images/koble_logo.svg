@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 28.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 841.9 841.9" style="enable-background:new 0 0 841.9 841.9;" xml:space="preserve">
-<style type="text/css">
-	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
-  .st4{fill:#000000;}
-</style>
-<rect class="st4" x="-0.5" y="-0.5" width="842" height="842"/>
-<path class="st5" d="M275.8,420.2l68.1,219h153l68.1-219l-68.1-219h-153L275.8,420.2z M393.2,268.1l-47.3,152l47.3,152h54.4
-	l47.3-152l-47.3-152L393.2,268.1L393.2,268.1z"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 841.9 841.9">
+  <defs>
+    <style>
+      .cls-6 {
+        fill: #fff;
+        fill-rule: evenodd;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cls-6" d="M275.8,420.2l68.1,219h153l68.1-219-68.1-219h-153l-68.1,219ZM393.2,268.1l-47.3,152,47.3,152h54.4l47.3-152-47.3-152h-54.4Z"/>
 </svg>

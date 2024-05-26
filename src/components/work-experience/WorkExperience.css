@@ -76,22 +76,19 @@
   width: 25%;
 }
 
-.initiator-logo:hover .st1 { fill: #39CCFF; transition: fill 0.2s; }
-.initiator-logo.selected .st1 { fill: #39CCFF; transition: fill 0.2s; }
+.company-logo {
+  width: 120px;
+  height: 120px;
+  background: black;
+  transition: background 0.2s;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
 
-.fly-logo:hover .st3 { fill: #D486FE; transition: fill 0.2s; }
-.fly-logo.selected .st3 { fill: #D486FE; transition: fill 0.2s; }
+.company-logo:hover {
+  background: linear-gradient(90deg, #068F38, #EA5920, #FCEB3B);
+}
 
-.koble-logo:hover .st4 { fill: #4AFFA8; transition: fill 0.2s; }
-.koble-logo:hover .st5 { fill: #000000; transition: fill 0.2s; }
-.koble-logo.selected .st4 { fill: #4AFFA8; transition: fill 0.2s; }
-.koble-logo.selected .st5 { fill: #000000; transition: fill 0.2s; }
-
-.makor-logo:hover .st8 { fill: #440595; transition: fill 0.2s; }
-.makor-logo.selected .st8 { fill: #440595; transition: fill 0.2s; }
-
-.rouvenat-logo:hover .st6 { fill: #C6633D; transition: fill 0.2s; }
-.rouvenat-logo.selected .st6 { fill: #C6633D; transition: fill 0.2s; }
-
-.xapien-logo:hover .st7 { fill: #1DCCBF; transition: fill 0.2s; }
-.xapien-logo.selected .st7 { fill: #1DCCBF; transition: fill 0.2s; }
+.company-logo.selected {
+  background: linear-gradient(90deg, #068F38, #EA5920, #FCEB3B);
+}
