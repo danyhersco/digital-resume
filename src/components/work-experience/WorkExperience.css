@@ -86,9 +86,9 @@
 }
 
 .company-logo:hover {
-  background: linear-gradient(90deg, #068F38, #EA5920, #FCEB3B);
+  background: linear-gradient(90deg, #000000, #068F38, #EA5920, #FCEB3B);
 }
 
 .company-logo.selected {
-  background: linear-gradient(90deg, #068F38, #EA5920, #FCEB3B);
+  background: linear-gradient(90deg, #000000, #068F38, #EA5920, #FCEB3B);
 }
