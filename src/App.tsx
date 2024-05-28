@@ -7,6 +7,7 @@ import Education from './components/education/Education';
 import WorkExperience from './components/work-experience/WorkExperience';
 import Activities from './components/activities/Activities';
 import Skills from './components/skills/Skills';
+import Chat from './components/chat/Chat';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <section id="work_experience"><WorkExperience/></section>
       <section id="activities"><Activities/></section>
       <section id="skills"><Skills/></section>
+      <section id="chat_with_me"><Chat/></section>
     </div>
   );
 }
