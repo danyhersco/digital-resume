@@ -37,7 +37,7 @@
 }
 
 .choice {
-  background-color: #F5F5F5;
+  background: #F5F5F5;
   border-radius: 50px;
   height: 50px;
   box-sizing: border-box;
@@ -45,17 +45,17 @@
   padding-right: 25px;
   display: flex;
   align-items: center;
-  transition: background-color ease 0.2s;
+  transition: background ease 0.2s;
 }
 
 .choice:hover {
-  background-color: #D9D9D9;
+  background: #D9D9D9;
 }
 
 .choice.selected {
-  background-color: #000000;
   color: white;
   fill: white;
+  background: linear-gradient(90deg, #000000, #068F38, #EA5920, #FCEB3B)
 }
 
 .work-experience-arrow {
@@ -64,30 +64,36 @@
 
 hr {
   border: 0.1px solid black;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .work-experience-data {
-  width: 60%;
+  width: 75%;
+}
+
+.work-experience-header {
+  display: flex;
+  gap: 30px;
 }
 
 .company-logo {
-  height: 15vh;
-  width: 15vh;
-  padding: 1vh;
-  border-radius: 50%;
-  transition: color 0.2s;
+  background-color: #000000;
+  border-radius: 25px;
+  width: 100px;
+  height: 100px;
 }
 
 .work-experience-job-title {
   font-family: 'Helvetica Neue';
-  font-size: 35px;
+  font-size: 30px;
   letter-spacing: -1px;
   margin: 0px;
 }
 
 .work-experience-company {
   font-family: 'Helvetica Neue';
-  font-size: 35px;
+  font-size: 30px;
   letter-spacing: -1px;
   margin: 0px;
   font-weight: 300;
@@ -95,7 +101,7 @@ hr {
 
 .work-experience-span {
   font-family: 'Helvetica Neue';
-  font-size: 35px;
+  font-size: 30px;
   letter-spacing: -1px;
   margin: 0px;
   font-weight: 300;
@@ -110,19 +116,10 @@ hr {
   width: 25%;
 }
 
-.company-logo {
-  width: 120px;
-  height: 120px;
-  background: black;
-  transition: background 0.2s;
-  margin-right: 15px;
-  margin-bottom: 15px;
-}
-
 .company-logo:hover {
-  background: linear-gradient(90deg, #000000, #068F38, #EA5920, #FCEB3B);
+  background: linear-gradient(45deg, #000000, #068F38, #EA5920, #FCEB3B);
 }
 
 .company-logo.selected {
-  background: linear-gradient(90deg, #000000, #068F38, #EA5920, #FCEB3B);
+  background: linear-gradient(45deg, #000000, #068F38, #EA5920, #FCEB3B);
 }

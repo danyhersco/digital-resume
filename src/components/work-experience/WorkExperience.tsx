@@ -27,6 +27,31 @@ const WorkExperience: React.FC = () => {
     ));
   };
 
+  let selectedLogo;
+
+  switch (selectedExperience) {
+    case "Xapien":
+      selectedLogo = <XapienLogo />;
+      break;
+    case "Koble":
+      selectedLogo = <KobleLogo />;
+      break;
+    case "Initiator":
+      selectedLogo = <InitiatorLogo />;
+      break;
+    case "Rouvenat":
+      selectedLogo = <RouvenatLogo />;
+      break;
+    case "Makor":
+      selectedLogo = <MakorLogo />;
+      break;
+    case "Fly":
+      selectedLogo = <FlyLogo />;
+      break;
+    default:
+      selectedLogo = <XapienLogo />;
+  }
+
   return (
     <div className="work-experience-section">
       <div className="work-experience-zone">
@@ -90,15 +115,20 @@ const WorkExperience: React.FC = () => {
           </div>
           <hr/>
           <div className="work-experience-data">
-            <h2 className="work-experience-job-title">
-              {workExperienceData.title}
-            </h2>
-            <h2 className="work-experience-company">
-              {workExperienceData.companyName}
-            </h2>
-            <h2 className="work-experience-span">
-              {workExperienceData.startDate} - {workExperienceData.endDate}
-            </h2>
+            <div className="work-experience-header">
+              <div className="company-logo">{selectedLogo}</div>
+              <div className="work-experience-specifics">
+                <h2 className="work-experience-job-title">
+                  {workExperienceData.title}
+                </h2>
+                <h2 className="work-experience-company">
+                  {workExperienceData.companyName}
+                </h2>
+                <h2 className="work-experience-span">
+                  {workExperienceData.startDate} - {workExperienceData.endDate}
+                </h2>
+              </div>
+            </div>
             <p className="work-experience-description">
               {formatDescription(workExperienceData.description)}
             </p>
