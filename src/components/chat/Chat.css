@@ -26,23 +26,49 @@
 .chat-bubbles {
   flex: 80%;
   margin-bottom: 20px;
-  background-color: brown;
+}
+
+.chat-form {
+  height: 60px;
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
 }
 
 .chat-input {
-  flex: 10%;
+  flex: 80%;
   background-color: #F5F5F5;
   border: 0px;
   border-radius: 50px;
 
   padding: 12px 20px;
   box-sizing: border-box;
-  outline: none;
 
+  outline: none;
   font-size: 14px;
   font-family: "Inter";
 }
 
+.chat-submit {
+  background-color: black;
+  border-radius: 50px;
+
+  margin-top: 0px;
+  height: 100%;
+  width: 80px;
+  font-size: 14px;
+  font-family: "Inter";
+  color: white;
+}
+
+.chat-submit:hover {
+  background-color: rgb(64, 64, 64);
+}
+
 .chat-input:focus {
   border: 0px;
+}
+
+.submit-arrow {
+  fill: white;
 }
