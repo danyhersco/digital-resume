@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "./WorkExperience.css";
 import { ReactComponent as FlyLogo } from "../../images/fly_logo.svg";
 import { ReactComponent as InitiatorLogo } from "../../images/initiator_logo.svg";
@@ -6,19 +6,20 @@ import { ReactComponent as KobleLogo } from "../../images/koble_logo.svg";
 import { ReactComponent as MakorLogo } from "../../images/makor_logo.svg";
 import { ReactComponent as RouvenatLogo } from "../../images/rouvenat_logo.svg";
 import { ReactComponent as XapienLogo } from "../../images/xapien_logo.svg";
+import { ReactComponent as Arrow } from "../../images/arrow_right.svg";
 import workExperienceDataMapping from "./WorkExperienceData";
 
 const WorkExperience: React.FC = () => {
-  const [selectedExperience, setSelectedExperience] = useState<string>("Fly");
+  const [selectedExperience, setSelectedExperience] = useState<string>("Xapien");
 
   const handleLogoClick = (companyName: string) => {
     setSelectedExperience(companyName);
   };
 
-  const workExperienceData = workExperienceDataMapping[selectedExperience]
+  const workExperienceData = workExperienceDataMapping[selectedExperience];
 
   const formatDescription = (description: string) => {
-    return description.split('\n').map((line, index) => (
+    return description.split("\n").map((line, index) => (
       <span key={index}>
         {line}
         <br />
@@ -31,50 +32,91 @@ const WorkExperience: React.FC = () => {
       <div className="work-experience-zone">
         <h1 className="work-experience-h1">Work Experience</h1>
         <div className="work-experience-items">
-          <div className="work-experience-logos">
-              <FlyLogo
-                className={`company-logo fly-logo ${selectedExperience === 'Fly' ? 'selected' : ''}`}
-                onClick={() => handleLogoClick("Fly")}
-              />
-              <InitiatorLogo
-                className={`company-logo initiator-logo ${selectedExperience === 'Initiator' ? 'selected' : ''}`}
-                onClick={() => handleLogoClick("Initiator")}
-              />
-              <KobleLogo
-                className={`company-logo koble-logo ${selectedExperience === 'Koble' ? 'selected' : ''}`}
-                onClick={() => handleLogoClick("Koble")}
-              />
-              <MakorLogo
-                className={`company-logo makor-logo ${selectedExperience === 'Makor' ? 'selected' : ''}`}
-                onClick={() => handleLogoClick("Makor")}
-              />
-              <RouvenatLogo
-                className={`company-logo rouvenat-logo ${selectedExperience === 'Rouvenat' ? 'selected' : ''}`}
-                onClick={() => handleLogoClick("Rouvenat")}
-              />
-              <XapienLogo
-                className={`company-logo xapien-logo ${selectedExperience === 'Xapien' ? 'selected' : ''}`}
-                onClick={() => handleLogoClick("Xapien")}
-              />
+          <div className="work-experience-choices">
+            <div
+              className={`choice xapien ${
+                selectedExperience === "Xapien" ? "selected" : ""
+              }`}
+              onClick={() => handleLogoClick("Xapien")}
+            >
+              Xapien
+              <Arrow className="work-experience-arrow"/>
+            </div>
+            <div
+              className={`choice koble ${
+                selectedExperience === "Koble" ? "selected" : ""
+              }`}
+              onClick={() => handleLogoClick("Koble")}
+            >
+              Koble
+              <Arrow className="work-experience-arrow"/>
+            </div>
+            <div
+              className={`choice initiator ${
+                selectedExperience === "Initiator" ? "selected" : ""
+              }`}
+              onClick={() => handleLogoClick("Initiator")}
+            >
+              Initiator
+              <Arrow className="work-experience-arrow"/>
+            </div>
+            <div
+              className={`choice rouvenat ${
+                selectedExperience === "Rouvenat" ? "selected" : ""
+              }`}
+              onClick={() => handleLogoClick("Rouvenat")}
+            >
+              Rouvenat
+              <Arrow className="work-experience-arrow"/>
+            </div>
+            <div
+              className={`choice makor ${
+                selectedExperience === "Makor" ? "selected" : ""
+              }`}
+              onClick={() => handleLogoClick("Makor")}
+            >
+              Makor
+              <Arrow className="work-experience-arrow"/>
+            </div>
+            <div
+              className={`choice fly ${
+                selectedExperience === "Fly" ? "selected" : ""
+              }`}
+              onClick={() => handleLogoClick("Fly")}
+            >
+              Fly
+              <Arrow className="work-experience-arrow"/>
+            </div>
           </div>
+          <hr/>
           <div className="work-experience-data">
-              <h2 className="work-experience-job-title">{workExperienceData.title}</h2>
-              <h2 className="work-experience-company">{workExperienceData.companyName}</h2>
-              <h2 className="work-experience-span">
-                {workExperienceData.startDate} - {workExperienceData.endDate}
-              </h2>
-              <p className="work-experience-description">
-                {formatDescription(workExperienceData.description)}
-              </p>
-              <a href={workExperienceData.link} target="_blank" rel="noopener noreferrer">
-                <button className="work-experience-button">visit_{selectedExperience.toLowerCase()}</button>
-              </a>
-              <div className="hello"></div>
+            <h2 className="work-experience-job-title">
+              {workExperienceData.title}
+            </h2>
+            <h2 className="work-experience-company">
+              {workExperienceData.companyName}
+            </h2>
+            <h2 className="work-experience-span">
+              {workExperienceData.startDate} - {workExperienceData.endDate}
+            </h2>
+            <p className="work-experience-description">
+              {formatDescription(workExperienceData.description)}
+            </p>
+            <a
+              href={workExperienceData.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="work-experience-button">
+                visit_{selectedExperience.toLowerCase()}
+              </button>
+            </a>
+            <div className="hello"></div>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default WorkExperience;
