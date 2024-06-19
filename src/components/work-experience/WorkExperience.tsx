@@ -113,7 +113,6 @@ const WorkExperience: React.FC = () => {
               <Arrow className="work-experience-arrow"/>
             </div>
           </div>
-          <hr/>
           <div className="work-experience-data">
             <div className="work-experience-header">
               <div className="company-logo">{selectedLogo}</div>
