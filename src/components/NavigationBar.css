@@ -17,3 +17,12 @@
   color: black;
   text-decoration: none;
 }
+
+.navigation-bar a:hover,
+.navigation-bar a.active {
+  font-weight: bold;
+}
+
+.unavailable-section {
+  font-style: italic;
+}

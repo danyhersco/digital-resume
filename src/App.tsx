@@ -19,7 +19,7 @@ function App() {
       <section id="work_experience"><WorkExperience/></section>
       <section id="activities"><Activities/></section>
       <section id="skills"><Skills/></section>
-      <section id="chat_with_me"><Chat/></section>
+      {/* <section id="chat_with_me"><Chat/></section> */}
     </div>
   );
 }
