@@ -39,7 +39,10 @@ const NavigationBar: React.FC = () => {
         <li><a href="#work_experience">work_experience</a></li>
         <li><a href="#activities">activities</a></li>
         <li><a href="#skills">skills</a></li>
-        <li className="unavailable-section">chat_with_me</li>
+        <div className='unavailable-section'>
+          <div className="unavailable-section-title">chat</div>
+          <div className="coming-soon">SOON</div>
+        </div>
       </ul>
     </nav>
   )

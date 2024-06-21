@@ -7,7 +7,7 @@ import Education from './components/education/Education';
 import WorkExperience from './components/work-experience/WorkExperience';
 import Activities from './components/activities/Activities';
 import Skills from './components/skills/Skills';
-import Chat from './components/chat/Chat';
+// import Chat from './components/chat/Chat';
 
 function App() {
   return (

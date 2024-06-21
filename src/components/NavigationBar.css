@@ -18,11 +18,35 @@
   text-decoration: none;
 }
 
+.navigation-bar li {
+  margin-bottom: 3px;
+}
+
 .navigation-bar a:hover,
 .navigation-bar a.active {
   font-weight: bold;
 }
 
 .unavailable-section {
-  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.unavailable-section-title {
+  color: rgb(159, 159, 159);
+}
+
+.coming-soon {
+  font-size: 10px;
+  font-weight: bold;
+  font-family: 'Inter';
+  color: white;
+  background: linear-gradient(90deg, #000000, #068F38, #EA5920, #FCEB3B);
+  border-radius: 20px;
+  padding: 3px;
+  width:40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

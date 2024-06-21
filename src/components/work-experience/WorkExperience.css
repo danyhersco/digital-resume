@@ -116,11 +116,3 @@ hr {
 .work-experience-button {
   width: 25%;
 }
-
-.company-logo:hover {
-  background: linear-gradient(45deg, #000000, #068F38, #EA5920, #FCEB3B);
-}
-
-.company-logo.selected {
-  background: linear-gradient(45deg, #000000, #068F38, #EA5920, #FCEB3B);
-}
