@@ -7,20 +7,20 @@ import { ReactComponent as UnknownLogo } from "../../images/unknown_logo.svg";
 
 interface EducationItemProps {
   institutionName: string;
+  startDate: string;
+  endDate: string;
   educationLevel: string;
-  programmeName: string;
-  bulletPoints: string[];
-  isExpanded: boolean;
-  onToggleExpansion: () => void;
+  // programmeName: string;
+  // bulletPoints: []string;
 }
 
 const EducationItem: React.FC<EducationItemProps> = ({
   institutionName,
+  startDate,
+  endDate,
   educationLevel,
-  programmeName,
-  bulletPoints,
-  isExpanded,
-  onToggleExpansion
+  // programmeName,
+  // bulletPoints,
 }) => {
 
   const logoComponent = (() => {
@@ -39,25 +39,36 @@ const EducationItem: React.FC<EducationItemProps> = ({
   })();
 
   return (
-    <div className={`education-item-zone ${isExpanded ? 'expanded' : ''}`}>
+    <div className="education-item-zone">
       {logoComponent}
-      <div className="education-item" onClick={onToggleExpansion}>
-        <h2>{institutionName}</h2>
-        <p>
-          {educationLevel} - {programmeName}
-        </p>
-        {isExpanded && (
-          <div className="additional-info">
-            <ul>
-              {bulletPoints.map((point, index) => (
-                <li key={index}>{point}</li>
-              ))}
-            </ul>
-          </div>
-        )}
+      <div className="education-item-primary-info">
+        <p className="institution-name">{institutionName}</p>
+        <p className="education-span">{startDate} - {endDate}</p>
+        <p className="education-level">{educationLevel}</p>
       </div>
     </div>
-  );
+  )
+
+  // return (
+  //   <div className={`education-item-zone`}>
+  //     {logoComponent}
+  //     <div className="education-item">
+  //       <h2>{institutionName}</h2>
+  //       <p>
+  //         {educationLevel} - {programmeName}
+  //       </p>
+  //       {isExpanded && (
+  //         <div className="additional-info">
+  //           <ul>
+  //             {bulletPoints.map((point, index) => (
+  //               <li key={index}>{point}</li>
+  //             ))}
+  //           </ul>
+  //         </div>
+  //       )}
+  //     </div>
+  //   </div>
+  // );
 };
 
 export default EducationItem;
