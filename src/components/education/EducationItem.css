@@ -39,20 +39,8 @@
   border-radius: 3vh;
 }
 
-.imperial-logo .st0 { fill: #0000CE; }
-.imperial-logo .st1 { fill: #FFFFFF; }
-
-.lse-logo .st0 { fill: #ED1C2D; }
-.lse-logo .st1 { fill: #FFFFFF; }
-
-.ganenou-logo .st0 { fill: #2C4990; }
-.ganenou-logo .st1 { fill: #FFFFFF; }
-
-.lewagon-logo .st0 { fill: #ED1C2D; }
-.lewagon-logo .st1 { fill: #FFFFFF; }
-
-.unknown-logo .st0 { fill: #8E8E8E; }
-.unknown-logo .st1 { fill: #FFFFFF; }
+.institution-logo .st0 { background: #000000; }
+.institution-logo .st1 { background: #ffffff; }
 
 .education-item h2 {
   margin-bottom: 1vh;
