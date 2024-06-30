@@ -10,8 +10,8 @@ interface EducationItemProps {
   startDate: string;
   endDate: string;
   educationLevel: string;
-  // programmeName: string;
-  // bulletPoints: []string;
+  programmeName: string;
+  bulletPoints: string[];
 }
 
 const EducationItem: React.FC<EducationItemProps> = ({
@@ -19,8 +19,8 @@ const EducationItem: React.FC<EducationItemProps> = ({
   startDate,
   endDate,
   educationLevel,
-  // programmeName,
-  // bulletPoints,
+  programmeName,
+  bulletPoints,
 }) => {
 
   const logoComponent = (() => {
@@ -40,35 +40,24 @@ const EducationItem: React.FC<EducationItemProps> = ({
 
   return (
     <div className="education-item-zone">
-      {logoComponent}
       <div className="education-item-primary-info">
-        <p className="institution-name">{institutionName}</p>
-        <p className="education-span">{startDate} - {endDate}</p>
-        <p className="education-level">{educationLevel}</p>
+        {logoComponent}
+        <div className="education-item-primary-info-text">
+          <p className="institution-name">{institutionName}</p>
+          <p className="education-span">{startDate} - {endDate}</p>
+          <p className="education-level">{educationLevel}</p>
+        </div>
+      </div>
+      <div className="education-item-secondary-info">
+        <p className="programme-name">{programmeName}</p>
+        <ul className="education-bullet-points">
+          {bulletPoints.map((point, index) => (
+            <li key={index}>{point}</li>
+          ))}
+        </ul>
       </div>
     </div>
   )
-
-  // return (
-  //   <div className={`education-item-zone`}>
-  //     {logoComponent}
-  //     <div className="education-item">
-  //       <h2>{institutionName}</h2>
-  //       <p>
-  //         {educationLevel} - {programmeName}
-  //       </p>
-  //       {isExpanded && (
-  //         <div className="additional-info">
-  //           <ul>
-  //             {bulletPoints.map((point, index) => (
-  //               <li key={index}>{point}</li>
-  //             ))}
-  //           </ul>
-  //         </div>
-  //       )}
-  //     </div>
-  //   </div>
-  // );
 };
 
 export default EducationItem;

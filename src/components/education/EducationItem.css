@@ -1,17 +1,37 @@
 .education-item-zone {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
   width: 470px;
   height: 150px;
   background-color: #F5F5F5;
   border-radius: 200px;
-  padding: 40px;
   box-sizing: border-box;
 }
 
+.education-item-zone:hover .education-item-primary-info {
+  display: none;
+}
+
+.education-item-zone:hover .education-item-secondary-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin-left: 15%;
+}
+
 .education-item-primary-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.education-item-secondary-info {
+  display: none;
+}
+
+.education-item-primary-info-text {
   display: flex;
   flex-direction: column;
   font-family: 'Inter';
@@ -39,65 +59,19 @@
   margin: 2px;
 }
 
-/* .education-item-zone {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: space-between;
-  width: 100%;
-  height: 12vh;
-  box-sizing: border-box;
-  transition: height 0.3s ease, margin 0.3s ease;
+.programme-name {
+  font-size: 17px;
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
-.education-item-zone.expanded {
-  height: 24vh;
-}
-
-.education-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-grow: 1;
-  height: 100%;
-  background-color: #F5F5F5;
-  border-radius: 4vh;
-  padding: 4vh;
-  box-sizing: border-box;
-  overflow: hidden;
-  margin-left: 2vh;
-  transition: background-color 0.2s ease;
-}
-
-.education-item:hover {
-  background-color: #D9D9D9;
-  cursor: pointer;
-}
-
-.institution-logo {
-  width: auto;
-  height: 12vh;
-  border-radius: 3vh;
-}
-
-.institution-logo .st0 { background: #000000; }
-.institution-logo .st1 { background: #ffffff; }
-
-.education-item h2 {
-  margin-bottom: 1vh;
-}
-
-.education-item p {
-  margin-top: 0;
-}
-
-.additional-info ul {
+ul.education-bullet-points {
   list-style-type: disc;
-  padding-left: 20px;
+  padding: 0;
+  margin: 0;
 }
 
-.additional-info li {
-  margin-bottom: 5px;
-  font-size: 0.9em;
-  line-height: 1.4;
-} */
+.education-bullet-points li {
+  font-size: 17px;
+}
