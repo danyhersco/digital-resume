@@ -38,11 +38,10 @@
 }
 
 .coming-soon {
-  font-size: 10px;
-  font-weight: bold;
-  font-family: 'Inter';
+  font-size: 11px;
+  font-family: 'Inter Bold';
   color: white;
-  background: linear-gradient(90deg, #000000, #068F38, #EA5920, #FCEB3B);
+  background: rgb(255, 83, 83);
   border-radius: 20px;
   padding: 3px;
   width:40px;

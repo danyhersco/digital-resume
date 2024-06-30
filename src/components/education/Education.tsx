@@ -3,16 +3,6 @@ import "./Education.css";
 import EducationItem from "./EducationItem";
 
 const Education: React.FC = () => {
-  const [expandedItem, setExpandedItem] = useState<string | null>(null);
-
-  const toggleExpansion = (institutionName: string) => {
-    if (expandedItem === institutionName) {
-      setExpandedItem(null);
-    } else {
-      setExpandedItem(institutionName);
-    }
-  };
-
   return (
     <div className="education-section">
       <div className="education-zone">

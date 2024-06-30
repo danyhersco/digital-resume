@@ -4,6 +4,7 @@ import { ReactComponent as LseLogo } from "../../images/lse_logo.svg";
 import { ReactComponent as GanenouLogo } from "../../images/ganenou_logo.svg";
 import { ReactComponent as LeWagonLogo } from "../../images/lewagon_logo.svg";
 import { ReactComponent as UnknownLogo } from "../../images/unknown_logo.svg";
+import SkillPill from "../utils/SkillPill";
 
 interface EducationItemProps {
   institutionName: string;
@@ -45,7 +46,7 @@ const EducationItem: React.FC<EducationItemProps> = ({
         <div className="education-item-primary-info-text">
           <p className="institution-name">{institutionName}</p>
           <p className="education-span">{startDate} - {endDate}</p>
-          <p className="education-level">{educationLevel}</p>
+          <SkillPill text={educationLevel} colour="black"/>
         </div>
       </div>
       <div className="education-item-secondary-info">
