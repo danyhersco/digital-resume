@@ -32,8 +32,6 @@
 }
 
 .education-item-primary-info-text {
-  display: flex;
-  flex-direction: column;
   font-family: 'Inter';
   font-size: 17px;
 }
@@ -48,15 +46,11 @@
 .institution-logo .st1 { background: #ffffff; }
 
 .institution-name {
-  margin: 2px 0;
+  margin: 4px;
 }
 
 .education-span {
-  margin: 2px;
-}
-
-.education-level {
-  margin: 2px;
+  margin: 4px;
 }
 
 .programme-name {
