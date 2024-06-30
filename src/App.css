@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter Bold';
+  src: url('fonts/Inter-Bold.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DMMono';
+  src: url('fonts/DMMono-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+
 button {
   height: 45px;
   width: 18%;
