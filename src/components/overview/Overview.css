@@ -27,3 +27,12 @@
 .overview-p {
   font-family: 'Inter';
 }
+
+.overview-button {
+  margin-right: 10px;
+}
+
+.overview-button:disabled {
+  background-color: #F5F5F5;
+  color: #a5a5a5;
+}

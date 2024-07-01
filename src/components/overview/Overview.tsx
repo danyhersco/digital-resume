@@ -1,5 +1,6 @@
 import React from "react";
 import "./Overview.css";
+import SkillPill from "../utils/SkillPill";
 
 const calculateAge = (birthdate: Date): number => {
   const today = new Date();
@@ -45,7 +46,10 @@ const Overview: React.FC = () => {
           eagerness to learn, and motivation to reach my career goals. Excited
           for what's next!
         </p>
-        <button className="overview-button">chat_with_me</button>
+        <div>
+          <button disabled className="overview-button">chat_with_me</button>
+          <SkillPill text="soon" colour="#FF5353" />
+        </div>
       </div>
     </div>
   );
