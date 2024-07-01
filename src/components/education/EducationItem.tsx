@@ -12,7 +12,7 @@ interface EducationItemProps {
   endDate: string;
   educationLevel: string;
   programmeName: string;
-  bulletPoints: string[];
+  educationDetails: string;
 }
 
 const EducationItem: React.FC<EducationItemProps> = ({
@@ -21,7 +21,7 @@ const EducationItem: React.FC<EducationItemProps> = ({
   endDate,
   educationLevel,
   programmeName,
-  bulletPoints,
+  educationDetails,
 }) => {
 
   const logoComponent = (() => {
@@ -51,11 +51,9 @@ const EducationItem: React.FC<EducationItemProps> = ({
       </div>
       <div className="education-item-secondary-info">
         <p className="programme-name">{programmeName}</p>
-        <ul className="education-bullet-points">
-          {bulletPoints.map((point, index) => (
-            <li key={index}>{point}</li>
-          ))}
-        </ul>
+        {educationDetails.split('<br />').map((line, index) => (
+          <p className="education-details" key={index}>{line}</p>
+        ))}
       </div>
     </div>
   )

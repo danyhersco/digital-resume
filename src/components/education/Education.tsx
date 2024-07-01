@@ -14,10 +14,7 @@ const Education: React.FC = () => {
             endDate="2025"
             educationLevel="Master's Degree"
             programmeName="MSc Computational Science and Engineering"
-            bulletPoints={[
-              "Mathematics - 95%, Software Engineering - 92%, Data Science - 89%",
-              "AI and Machine Learning-assisted Biomimicry"
-            ]}
+            educationDetails="Expected to start in September 2024"
           />
           <EducationItem
             institutionName="London School of Economics"
@@ -25,10 +22,7 @@ const Education: React.FC = () => {
             endDate="2022"
             educationLevel="Bachelor's Degree"
             programmeName="Bsc Management"
-            bulletPoints={[
-              "Macroeconomics - 95%, Mathematics - 92%, Statistics - 89%, Accounting - 88%",
-              "Overall Upper Second-Class Honours (2:1) with 69% average"
-            ]}
+            educationDetails="Upper Second-Class Honours 69%<br />Macroeconomics - 95%, Mathematics - 92%, Statistics - 89%, Accounting - 88%"
           />
           <EducationItem
             institutionName="Athénée Ganenou"
@@ -36,10 +30,7 @@ const Education: React.FC = () => {
             endDate="2019"
             educationLevel="High School Degree"
             programmeName="Mathematics Advanced"
-            bulletPoints={[
-              "Mathematics - 92%, Physics - 89%, Chemistry - 82%",
-              "Best Academic Prize with year-end overall of 85%"
-            ]}
+            educationDetails="Best Academic Prize with average of 85%<br />Mathematics 92%, Physics 89%, Biology 85%, Chemistry 82%"
           />
           <EducationItem
             institutionName="Le Wagon"
@@ -47,10 +38,7 @@ const Education: React.FC = () => {
             endDate="03/2023"
             educationLevel="Bootcamp"
             programmeName="Data Science Bootcamp"
-            bulletPoints={[
-              "Data Analysis, Decision Science, Machine Learning, Deep Learning, ML Ops",
-              "Predicting long-run performance of startups with Machine Learning"
-            ]}
+            educationDetails="Data Analysis, Decision Science, Machine Learning, Deep Learning, MLOps<br />Predicting startup success with ML"
           />
         </div>
       </div>
