@@ -28,7 +28,7 @@
 
 .activities-carousel {
   width: 100%;
-  height: 100%;
+  height: 70%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -87,22 +87,11 @@ img {
   width: 75%;
 }
 
-.activity-gallery {
-  height: 30%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-  padding-top: 20px;
-}
-
-.gallery-element {
-  background-color: #bcbcbc;
-  height: 100%;
-  width: 150px;
+.activity-button {
   margin-right: 10px;
-  display: inline-block;
 }
 
-.activity-gallery::-webkit-scrollbar {
-  display: none;
+.activity-button:disabled {
+  background-color: rgb(180, 180, 180);
+  color: white;
 }

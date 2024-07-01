@@ -41,9 +41,11 @@ const activitiesData: ActivitiesData[] = [
     description: "After stopping piano lessons, I started playing the guitar. This marked the " +
     "start of my 'Rock and Roll' era. I entered a music school and was part of it for 3 years, " +
     "during which I took weekly lessons, participated in local concerts twice a year and was " +
-    "part of a band. I continue playing regularly to this day and occasionally record myself as " +
-    "part of my music production projects. Music is an important part of my life that I will " +
-    "never give up.",
+    "part of a band.\n\n" +
+    "I continue playing regularly to this day and occasionally record myself as " +
+    "part of my music production projects. I also recently started playing other genres such as " +
+    "folk, soul, or jazz, and learn how to improvise. Music is an important part of my life " +
+    "which I will never stop exploring.",
     gallery: ["link 1", "link 2", "link 3"],
   },
   {

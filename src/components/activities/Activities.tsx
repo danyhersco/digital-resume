@@ -3,6 +3,7 @@ import ArrowLeft from "../../images/arrow_left.svg";
 import ArrowRight from "../../images/arrow_right.svg";
 import "./Activities.css";
 import activitiesData from './ActivitiesData';
+import SkillPill from '../utils/SkillPill';
 
 const Activities: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -47,16 +48,9 @@ const Activities: React.FC = () => {
             <p className="activity-description">
               {formatDescription(activeActivityData.description)}
             </p>
-            <div className="activity-gallery">
-              <div className="gallery-element"></div>
-              <div className="gallery-element"></div>
-              <div className="gallery-element"></div>
-              <div className="gallery-element"></div>
-              <div className="gallery-element"></div>
-              <div className="gallery-element"></div>
-              <div className="gallery-element"></div>
-              <div className="gallery-element"></div>
-              <div className="gallery-element"></div>
+            <div>
+              <button disabled className="activity-button">learn_more</button>
+              <SkillPill text="soon" colour="#FF5353" />
             </div>
           </div>
 
