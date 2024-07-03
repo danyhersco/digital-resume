@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './NavigationBar.css';
+import SkillPill from './utils/SkillPill';
 
 
 const NavigationBar: React.FC = () => {
@@ -41,7 +42,7 @@ const NavigationBar: React.FC = () => {
         <li><a href="#skills">skills</a></li>
         <div className='unavailable-section'>
           <div className="unavailable-section-title">chat</div>
-          <div className="coming-soon">SOON</div>
+          <SkillPill text="soon" colour="#FF5353"/>
         </div>
       </ul>
     </nav>
