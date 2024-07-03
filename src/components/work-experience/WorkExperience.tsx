@@ -3,7 +3,6 @@ import "./WorkExperience.css";
 import { ReactComponent as FlyLogo } from "../../images/fly_logo.svg";
 import { ReactComponent as InitiatorLogo } from "../../images/initiator_logo.svg";
 import { ReactComponent as KobleLogo } from "../../images/koble_logo.svg";
-import { ReactComponent as MakorLogo } from "../../images/makor_logo.svg";
 import { ReactComponent as RouvenatLogo } from "../../images/rouvenat_logo.svg";
 import { ReactComponent as XapienLogo } from "../../images/xapien_logo.svg";
 import { ReactComponent as Arrow } from "../../images/arrow_right.svg";
@@ -41,9 +40,6 @@ const WorkExperience: React.FC = () => {
       break;
     case "Rouvenat":
       selectedLogo = <RouvenatLogo />;
-      break;
-    case "Makor":
-      selectedLogo = <MakorLogo />;
       break;
     case "Fly":
       selectedLogo = <FlyLogo />;
@@ -92,15 +88,6 @@ const WorkExperience: React.FC = () => {
               onClick={() => handleLogoClick("Rouvenat")}
             >
               Rouvenat
-              <Arrow className="work-experience-arrow"/>
-            </div>
-            <div
-              className={`choice makor ${
-                selectedExperience === "Makor" ? "selected" : ""
-              }`}
-              onClick={() => handleLogoClick("Makor")}
-            >
-              Makor
               <Arrow className="work-experience-arrow"/>
             </div>
             <div

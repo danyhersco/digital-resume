@@ -59,22 +59,6 @@ const workExperienceDataMapping: Record<string, WorkExperienceData> = {
       "startup success using our pre-processed database.",
     link: "https://www.koble.ai/",
   },
-  Makor: {
-    title: "Investment Brokerage Intern",
-    companyName: "Makor Group",
-    startDate: "11/2020",
-    endDate: "11/2020",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula odio nisl, " +
-      "sit amet consequat eros aliquet in. Donec vel congue dolor. Nulla vitae libero ut sem " +
-      "aliquam eleifend et vitae est. Sed cursus ac est quis facilisis. Curabitur fringilla nibh " +
-      "et metus bibendum feugiat.\n\nAliquam imperdiet egestas efficitur. Aliquam massa felis, " +
-      "interdum et augue vel, maximus lacinia magna. Integer sit amet massa viverra, efficitur " +
-      "velit sed, pretium libero. Phasellus sit amet est metus. Integer auctor nibh commodo " +
-      "laoreet lacinia. Vivamus sed felis tempus, vulputate est at, scelerisque nunc. Donec nec " +
-      "tellus vel nulla varius scelerisque quis eu leo.",
-    link: "https://makor-group.com/",
-  },
   Rouvenat: {
     title: "Brand Strategy Intern",
     companyName: "Rouvenat",
