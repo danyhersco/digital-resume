@@ -7,16 +7,25 @@ import SkillPill from '../utils/SkillPill';
 
 const Activities: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   const nextSlide = () => {
-    setActiveIndex((prevIndex) =>
-      prevIndex === activitiesData.length - 1 ? 0 : prevIndex + 1
-    );
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setActiveIndex((prevIndex) =>
+        prevIndex === activitiesData.length - 1 ? 0 : prevIndex + 1
+      );
+      setIsTransitioning(false);
+    }, 200);
   };
   const prevSlide = () => {
-    setActiveIndex((prevIndex) =>
-      prevIndex === 0 ? activitiesData.length - 1 : prevIndex - 1
-    );
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setActiveIndex((prevIndex) =>
+        prevIndex === 0 ? activitiesData.length - 1 : prevIndex - 1
+      );
+      setIsTransitioning(false);
+    }, 200);
   };
 
   const formatDescription = (description: string) => {
@@ -40,17 +49,19 @@ const Activities: React.FC = () => {
             <img src={ArrowLeft} alt="Left Arrow"/>
           </div>
 
-          <div className="activities-item">
-            <h2 className="activity-title">{activeActivityData.activity}</h2>
-            <h2 className="activity-span">
-              {activeActivityData.startDate} - {activeActivityData.endDate}
-            </h2>
-            <p className="activity-description">
-              {formatDescription(activeActivityData.description)}
-            </p>
-            <div>
-              <button disabled className="activity-button">learn_more</button>
-              <SkillPill text="soon" colour="#FF5353" />
+          <div className="activity-item">
+            <div className={`activity-item-content ${isTransitioning ? '' : 'active'}`}>
+              <h2 className="activity-title">{activeActivityData.activity}</h2>
+              <h2 className="activity-span">
+                {activeActivityData.startDate} - {activeActivityData.endDate}
+              </h2>
+              <p className="activity-description">
+                {formatDescription(activeActivityData.description)}
+              </p>
+              <div>
+                <button disabled className="activity-button">learn_more</button>
+                <SkillPill text="soon" colour="#FF5353" />
+              </div>
             </div>
           </div>
 
