@@ -46,7 +46,7 @@
   padding-right: 25px;
   display: flex;
   align-items: center;
-  transition: background ease 0.2s;
+  transition: background 0.2s ease;
 }
 
 .choice:hover {
@@ -71,6 +71,12 @@ hr {
 
 .work-experience-data {
   width: 75%;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.work-experience-data.active {
+  opacity: 1;
 }
 
 .work-experience-header {

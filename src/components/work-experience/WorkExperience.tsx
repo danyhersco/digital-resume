@@ -10,9 +10,14 @@ import workExperienceDataMapping from "./WorkExperienceData";
 
 const WorkExperience: React.FC = () => {
   const [selectedExperience, setSelectedExperience] = useState<string>("Xapien");
+  const [isTransitioning, setIsTransitioning] = useState<boolean>(false)
 
   const handleLogoClick = (companyName: string) => {
-    setSelectedExperience(companyName);
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setSelectedExperience(companyName);
+      setIsTransitioning(false);
+    }, 200)
   };
 
   const workExperienceData = workExperienceDataMapping[selectedExperience];
@@ -100,7 +105,7 @@ const WorkExperience: React.FC = () => {
               <Arrow className="work-experience-arrow"/>
             </div>
           </div>
-          <div className="work-experience-data">
+          <div className={`work-experience-data ${isTransitioning ? '' : 'active'}`}>
             <div className="work-experience-header">
               <div className="company-logo">{selectedLogo}</div>
               <div className="work-experience-specifics">
