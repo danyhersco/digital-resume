@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import WelcomePage from './components/WelcomePage';
 import NavigationBar from './components/NavigationBar';
@@ -9,7 +9,37 @@ import Activities from './components/activities/Activities';
 import Skills from './components/skills/Skills';
 // import Chat from './components/chat/Chat';
 
-function App() {
+const App: React.FC = () => {
+  const [isTooSmall, setIsTooSmall] = useState(false);
+
+  const maxWindowWidth =  1280;
+  const checkWindowSize = () => {
+    setIsTooSmall(window.innerWidth < maxWindowWidth);
+  };
+
+  useEffect(() => {
+    checkWindowSize();
+    window.addEventListener('resize', checkWindowSize);
+    return () => window.removeEventListener('resize', checkWindowSize);
+  }, []);
+
+  if (isTooSmall) {
+    return (
+      <div className="disabled-window">
+        <div className="disabled-message">
+          <p>
+            Your screen or window is too small.
+            <br/>
+            My website will be available on all devices soon.
+            <br/><br/>
+            Best,<br/>
+            Dany :)
+          </p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="App">
       <NavigationBar/>
