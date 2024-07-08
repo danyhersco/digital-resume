@@ -1,7 +1,9 @@
 .education-item-zone {
-  display: flex;
-  width: 470px;
+  width: 400px;
   height: 150px;
+  flex: 1 2 auto;
+
+  display: flex;
   background-color: #F5F5F5;
   border-radius: 200px;
   box-sizing: border-box;

@@ -30,7 +30,6 @@
 .education-items {
   display: flex;
   flex-direction: row;
-  justify-content: stretch;
   gap: 30px;
   flex-wrap: wrap;
 }
