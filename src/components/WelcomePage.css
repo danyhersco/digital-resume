@@ -18,13 +18,17 @@
 
 .welcome-page-right {
   display: flex;
+  flex: 60%;
+  position: relative;
 }
 
 .rope {
-  height: 100%;
-  width: 100%;
-  right: 0%;
-  bottom: 0%;
+  position: absolute;
+  height: auto;
+  width: 90%;
+  right: 0;
+  bottom: 0;
+
 }
 
 .weird-forms {
