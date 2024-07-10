@@ -12,9 +12,10 @@ import Skills from './components/skills/Skills';
 const App: React.FC = () => {
   const [isTooSmall, setIsTooSmall] = useState(false);
 
-  const maxWindowWidth =  1280;
+  const maxWindowWidth = 1280;
+  const maxWindowHeight = 680;
   const checkWindowSize = () => {
-    setIsTooSmall(window.innerWidth < maxWindowWidth);
+    setIsTooSmall(window.innerWidth < maxWindowWidth || window.innerHeight < maxWindowHeight);
   };
 
   useEffect(() => {
