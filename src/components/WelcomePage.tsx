@@ -9,7 +9,7 @@ const WelcomePage: React.FC = () => {
       <div className="welcome-page-left">
         <p className="resume-header">
           digital_resume<br />
-          last_updated: 09/07/2024
+          last_updated: 17/02/2025
         </p>
         <h1 className="welcome-page-h1">
           Dany<br />Herscovitch

@@ -13,8 +13,8 @@ const Education: React.FC = () => {
             startDate="2024"
             endDate="2025"
             educationLevel="Master's Degree"
-            programmeName="MSc Computational Science and Engineering"
-            educationDetails="Expected to start in September 2024"
+            programmeName="MSc Applied Computational Science and Engineering"
+            educationDetails="Current Overall Grade - A<br />A* in Deep Learning; A in Computational Mathematics, Data Science and ML"
           />
           <EducationItem
             institutionName="London School of Economics"

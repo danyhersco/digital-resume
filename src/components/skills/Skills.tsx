@@ -14,7 +14,7 @@ const Skills: React.FC = () => {
               Technology
             </h2>
             <h2 className="skill-group-body">
-              Python, JavaScript, TypeScript, Golang, SQL, C#, Sklearn, Tensorflow, Git, Langchain, React, NLP, Machine Learning, MLOps
+              Python, JavaScript, TypeScript (React), Golang, SQL, C#, C++, PyTorch, Sklearn, Pandas, Langchain
             </h2>
             <h2 className="skill-group-title">
               Management
