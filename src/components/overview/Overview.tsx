@@ -34,12 +34,13 @@ const Overview: React.FC = () => {
           <br />
           After graduating, I started teaching myself how to code, and soon
           after, I dove deeper into this world by completing a Data Science
-          bootcamp at Le Wagon. Now, I'm an AI Research Engineer and Software
-          Developer at Xapien, where I am gaining practical technical
-          experience, surrounded by industry professionals. This experience also
-          enables me to witness how a fast-growing technology startup is being
-          managed. In September, I will be joining Imperial College for my
-          Master's degree in Applied Computational Science and Engineering!
+          bootcamp at Le Wagon. Then, after a couple months as a Data Science intern
+          at Koble, I join Xapien as an AI Software Developer. There, I gained substantial
+          practical technical experience surrounded by industry professionals. This experience also
+          enablex me to witness how a fast-growing technology startup is being
+          managed. Since September, I have been pursuing a Master's in Applied Computational
+          Science and Engineering at Imperial College, further deepening my knowledge in AI,
+          machine learning, and computational methodologies.
           <br />
           <br />
           My journey from management to tech showcases my adaptability,
