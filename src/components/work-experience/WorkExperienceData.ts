@@ -76,10 +76,10 @@ const workExperienceDataMapping: Record<string, WorkExperienceData> = {
     link: "https://en.rouvenat.com/",
   },
   Xapien: {
-    title: "Junior Applied Research Engineer",
+    title: "Junior Software Engineer",
     companyName: "Xapien AI",
     startDate: "05/2023",
-    endDate: "Present",
+    endDate: "09/2024",
     description:
       "Xapien is a London-based tech startup that automates background checks using advanced " +
       "Natural Language Processing (NLP) techniques. Simply enter the subject's name and some " +
