@@ -15,7 +15,7 @@ const WelcomePage: React.FC = () => {
           Dany<br />Herscovitch
         </h1>
         <h2 className="welcome-page-h2">
-          Software<br />Engineer
+          Software/AI<br />Engineer
         </h2>
       </div>
       <div className="welcome-page-right">
