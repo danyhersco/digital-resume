@@ -1,3 +1,5 @@
 # My Digital Resume
 
-This project represents my digital resume, programmed using React with Typescript. As a backend engineer, I wanted to extend my skills to frontend engineering. Developing a digital representation of my resume was the excuse to get those skills, making me a more complete engineer!
+This project represents my `React X TypeScript` digital resume!
+
+This is just a small project to extend my skills and discover the world of frontend engineering.
