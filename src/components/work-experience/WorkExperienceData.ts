@@ -90,6 +90,15 @@ const workExperienceDataMapping: Record<string, WorkExperienceData> = {
       "about their search subjects and receive answers in natural language.",
     link: "https://xapien.com/",
   },
+  Microsoft: {
+    title: "Research Intern",
+    companyName: "Microsoft",
+    startDate: "05/2025",
+    endDate: "09/2025",
+    description:
+      "I've interned at Microsoft as part of my Master's thesis, during which I worked on advancing education to make it more adaptable and accessible, notably through GenAI. More specifically, I've built ATLAS, an agentic Intelligent Tutoring System (ITS) that creates specialised conversational tutoring agents for each university course a student is enrolled in, providing guidance and encouraging critical thinking. The tech stack includes Python, Azure AI Foundry (Azure AI Search, Azure OpenAI), Semantic Kernel, FastMCP, and Azure Cloud Services (ACA, Cosmos DB, etc).\n\nThe link below leads to a blog post I wrote about the project on Microsoft's tech community hub website.",
+    link: "https://techcommunity.microsoft.com/blog/educatordeveloperblog/atlas-your-ai-tutoring-agent-for-personalised-learning/4450466",
+  },
 };
 
 export default workExperienceDataMapping;

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./WorkExperience.css";
 import { ReactComponent as FlyLogo } from "../../images/fly_logo.svg";
+import { ReactComponent as MicrosoftLogo } from "../../images/microsoft_logo.svg";
 import { ReactComponent as InitiatorLogo } from "../../images/initiator_logo.svg";
 import { ReactComponent as KobleLogo } from "../../images/koble_logo.svg";
 import { ReactComponent as RouvenatLogo } from "../../images/rouvenat_logo.svg";
@@ -34,6 +35,9 @@ const WorkExperience: React.FC = () => {
   let selectedLogo;
 
   switch (selectedExperience) {
+    case "Microsoft":
+      selectedLogo = <MicrosoftLogo />;
+      break;
     case "Xapien":
       selectedLogo = <XapienLogo />;
       break;
@@ -50,7 +54,7 @@ const WorkExperience: React.FC = () => {
       selectedLogo = <FlyLogo />;
       break;
     default:
-      selectedLogo = <XapienLogo />;
+      selectedLogo = <MicrosoftLogo />;
   }
 
   return (
@@ -59,6 +63,15 @@ const WorkExperience: React.FC = () => {
         <h1 className="work-experience-h1">Work Experience</h1>
         <div className="work-experience-items">
           <div className="work-experience-choices">
+            <div
+              className={`choice microsoft ${
+                selectedExperience === "Microsoft" ? "selected" : ""
+              }`}
+              onClick={() => handleLogoClick("Microsoft")}
+            >
+              Microsoft
+              <Arrow className="work-experience-arrow"/>
+            </div>
             <div
               className={`choice xapien ${
                 selectedExperience === "Xapien" ? "selected" : ""
