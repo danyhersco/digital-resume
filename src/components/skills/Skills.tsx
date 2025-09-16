@@ -11,30 +11,36 @@ const Skills: React.FC = () => {
         <div className="skills-collection">
           <div className="skills-col-1">
             <h2 className="skill-group-title">
-              Technology
+              Programming Languages
             </h2>
             <h2 className="skill-group-body">
-              Python, JavaScript, TypeScript (React), Golang, SQL, C#, C++, PyTorch, Sklearn, Pandas, Langchain
+              Python, C/C++, C#, Golang, JavaScript, TypeScript (React), SQL
             </h2>
             <h2 className="skill-group-title">
-              Management
+              ML/AI Frameworks
             </h2>
             <h2 className="skill-group-body">
-              Branding, Collaboration, Communication, Economics, Marketing, Startup Development
+              scikit-learn, Pytorch, LangChain, Semantic Kernel, Ollama, HuggingFace, Azure AI Foundry, FastMCP
             </h2>
             <h2 className="skill-group-title">
-              Languages
+              Scientific Computing
             </h2>
             <h2 className="skill-group-body">
-              French, English, Hebrew, Dutch
+              Numpy, Pandas, Matplotlib, SciPy, Statsmodels, OpenMP, MPI
             </h2>
           </div>
           <div className="skills-col-2">
             <h2 className="skill-group-title">
+              DevOps & Cloud
+            </h2>
+            <h2 className="skill-group-body">
+              Azure Cloud, Docker, Git, GitHub Actions, MLflow
+            </h2>
+            <h2 className="skill-group-title">
               Music
             </h2>
             <h2 className="skill-group-body">
-              Piano, Guitar, Music Production, FL Studio, Logic Pro, Sound Design (Serum)
+              Piano, Guitar, Music Production, FL Studio, Logic Pro, Serum
             </h2>
             <h2 className="skill-group-title">
               Graphic Design
@@ -43,10 +49,10 @@ const Skills: React.FC = () => {
               Adobe Photoshop, Illustrator, InDesign, XD, Figma
             </h2>
             <h2 className="skill-group-title">
-              Soft Skills
+              Languages
             </h2>
             <h2 className="skill-group-body">
-              Friendly, Fast Learner, Ambitious, Sociable, Procative, Perfectionism
+              French, English
             </h2>
           </div>
         </div>
