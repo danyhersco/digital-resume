@@ -10,7 +10,7 @@ import { ReactComponent as Arrow } from "../../images/arrow_right.svg";
 import workExperienceDataMapping from "./WorkExperienceData";
 
 const WorkExperience: React.FC = () => {
-  const [selectedExperience, setSelectedExperience] = useState<string>("Xapien");
+  const [selectedExperience, setSelectedExperience] = useState<string>("Microsoft");
   const [isTransitioning, setIsTransitioning] = useState<boolean>(false)
 
   const handleLogoClick = (companyName: string) => {
