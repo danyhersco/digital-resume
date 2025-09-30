@@ -14,7 +14,7 @@ const Education: React.FC = () => {
             endDate="2025"
             educationLevel="Master's Degree"
             programmeName="MSc Applied Computational Science and Engineering"
-            educationDetails="Current Overall Grade - A (Distinction)<br />Expected top 3 of the cohort of 120 students."
+            educationDetails="Awarded Distinction (A) (Thesis graded A*).<br />Top 3 of the cohort of 120 students."
           />
           <EducationItem
             institutionName="London School of Economics"
@@ -22,7 +22,7 @@ const Education: React.FC = () => {
             endDate="2022"
             educationLevel="Bachelor's Degree"
             programmeName="Bsc Management"
-            educationDetails="Upper Second-Class Honours 69%<br />Macroeconomics - 95%, Mathematics - 92%, Statistics - 89%, Accounting - 88%"
+            educationDetails="Upper Second-Class Honours.<br />Best result in Quantitative Methods (Mathematics) with 92%."
           />
           <EducationItem
             institutionName="Athénée Ganenou"
@@ -30,7 +30,7 @@ const Education: React.FC = () => {
             endDate="2019"
             educationLevel="High School Degree"
             programmeName="Mathematics Advanced"
-            educationDetails="Best Academic Prize with average of 85%<br />Mathematics 92%, Physics 89%, Biology 85%, Chemistry 82%"
+            educationDetails="Best Academic Prize with average of 85%.<br />Mathematics 92%, Physics 89%, Biology 85%, Chemistry 82%."
           />
           <EducationItem
             institutionName="Le Wagon"
@@ -38,7 +38,7 @@ const Education: React.FC = () => {
             endDate="03/2023"
             educationLevel="Bootcamp"
             programmeName="Data Science Bootcamp"
-            educationDetails="Data Analysis, Decision Science, Machine Learning, Deep Learning, MLOps<br />Predicting startup success with ML"
+            educationDetails="Data Analysis, Decision Science, Machine Learning, Deep Learning, MLOps.<br />Project: Predicting startup success with ML."
           />
         </div>
       </div>
